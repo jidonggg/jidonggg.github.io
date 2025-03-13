@@ -4,19 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: #007bff;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border: 3px solid #007bff;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-item:nth-child(even)::before {
+            left: -10px;
+        }
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #007bff;
+        }
+        .timeline-item p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <h1>안녕하세요! 저는 jidonggg 입니다.</h1>
-    <p>게임 개발자 | Unreal Engine | C++ | VR/AR</p>
-
-    <h2>🏆 주요 프로젝트</h2>
-    <ul>
-        <li><a href="https://github.com/yourusername/project">프로젝트 1</a> - Unreal Engine 5로 개발</li>
-        <li><a href="https://github.com/yourusername/project2">프로젝트 2</a> - C++ 게임 로직 구현</li>
-    </ul>
-
-    <h2>📫 연락처</h2>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername">프로필</a></p>
+    <div class="container">
+        <h1>주요 이력</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2020.2</h3>
+                <p><b>한국산업기술대 게임공학과 졸업</b></p>
+                <p>- 언리얼4를 이용한 졸업작품 -</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2020.1 ~ 2020.12</h3>
+                <p><b>라인게임즈</b> - Drangon Flight 게임 콘텐츠 개발 및 API 개발, 통합툴 연동</p>
+                <p>- Lua, C++, PHP, MySQL 사용 -</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2021.1 ~ 2022.1</h3>
+                <p><b>라인게임즈 SDK 개발지원실</b></p>
+                <p>- 언리얼4를 이용한 샘플게임 제작 및 SDK 연동 -</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2022.2 ~ 2022.10</h3>
+                <p><b>골프존</b></p>
+                <p>- 언리얼4를 이용한 프로젝트 -</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
