@@ -87,24 +87,9 @@
             <h2>📌 주요 이력</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3>2020.2</h3>
-                    <p><b>한국산업기술대 게임공학과 졸업</b></p>
-                    <p>- 언리얼4를 이용한 졸업작품 진행</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2020.1 ~ 2020.12</h3>
-                    <p><b>라인게임즈</b> - Drangon Flight 팀</p>
-                    <p>- 게임 콘텐츠 개발 및 API 개발 (Lua, C++, PHP, MySQL)</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2021.1 ~ 2022.1</h3>
-                    <p><b>라인게임즈 SDK 개발지원실</b></p>
-                    <p>- 언리얼4 기반 샘플게임 제작 및 SDK 연동</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2022.2 ~ 2022.10</h3>
-                    <p><b>골프존</b></p>
-                    <p>- C++을 이용한 골프존 클라이언트 개발</p>
+                    <h3>2023.4 ~ 현재</h3>
+                    <p><b>액션스퀘어</b></p>
+                    <p>- 언리얼5 기반 신작 던전스토커즈 개발, UMG 및 Enhanced Input 담당</p>
                 </div>
                 <div class="timeline-item">
                     <h3>2022.11 ~ 2023.3</h3>
@@ -112,14 +97,146 @@
                     <p>- Unity VR 포팅 및 최적화 작업</p>
                 </div>
                 <div class="timeline-item">
-                    <h3>2023.4 ~ 현재</h3>
-                    <p><b>액션스퀘어</b></p>
-                    <p>- 언리얼5 기반 신작 프로젝트 초기 참여, UMG 및 Enhanced Input 담당</p>
+                    <h3>2022.2 ~ 2022.10</h3>
+                    <p><b>골프존</b></p>
+                    <p>- C++을 이용한 골프존 클라이언트 개발</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2021.1 ~ 2022.1</h3>
+                    <p><b>라인게임즈 SDK 개발지원실</b></p>
+                    <p>- 언리얼4 기반 샘플게임 제작 및 SDK 연동</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>2020.1 ~ 2020.12</h3>
+                    <p><b>라인게임즈</b> - Drangon Flight 팀</p>
+                    <p>- 게임 콘텐츠 개발 및 API 개발 (Lua, C++, PHP, MySQL)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2020.2</h3>
+                    <p><b>한국산업기술대 게임공학과 졸업</b></p>
+                    <p>- 언리얼4를 이용한 졸업작품 진행</p>
                 </div>
             </div>
         </section>
-<section class="section">
-    <h2>🚀 진행한 프로젝트</h2>
+    <section class="section">
+        <h2>🚀 진행한 프로젝트</h2>
+            <!-- Unreal 5 신작 -->
+            <div class="project">
+                <h3>🎮 던전 스토커즈 개발 (액션스퀘어, 2023~현재)</h3>
+                <p><b>역할:</b> 언리얼 5 기반 신작 프로젝트 개발</p>
+                <p><b>사용 기술:</b> Unreal Engine 5, c++</p>
+                <h3>🛠 Enhanced Input 시스템적용</h3>
+                <p><b>주요 작업:</b></p>
+                <ul>
+                    <li>✔ Input Mapping Context(IMC) 개선 및 통합 관리</li>
+                    <li>✔ Player Mappable Key Settings 적용</li>
+                    <li>✔ Steam Cloud 연동을 통한 입력 설정 동기화</li>
+                    <li>✔ Unreal Engine 5.3 마이그레이션 및 입력 관리 구조 변경</li>
+                </ul>
+                <p>
+                    📌 자세한 기술 설명은 아래 문서에서 확인할 수 있습니다: <br>
+                    <a href="https://www.notion.so/Enhanced-Input-Binding-1b587dd5893c80d3a90ec6d8f8d920e8?pvs=4" target="_blank">
+                        🔗 Enhanced Input 시스템 개선 문서 보기
+                    </a>
+                </p>
+            </div>
+        
+            <!-- Breakable Component -->
+            <div class="project">
+                <h3>🛠 Breakable Component 시스템</h3>
+                <p><b>설명:</b> 특정 조건에서 파괴되는 오브젝트를 구현하는 시스템</p>
+                <p><b>주요 특징:</b></p>
+                <ul>
+                    <li>✔ 리플리케이션을 활용한 네트워크 동기화</li>
+                    <li>✔ 데이터 테이블 기반 오브젝트별 설정 관리</li>
+                    <li>✔ 서버/클라이언트 부하 최적화</li>
+                </ul>
+                <p>
+                    📌 상세한 기술 설명은 아래 문서에서 확인할 수 있습니다: <br>
+                    <a href="https://www.notion.so/Breakable-Component-1b587dd5893c8055a934ea46058d6095?pvs=4" target="_blank">
+                        🔗 Breakable Component 문서 보기
+                    </a>
+                </p>
+            </div>
+        
+            <!-- Analog Cursor -->
+            <div class="project">
+                <h3>🖱️ Gamepad Analog Cursor 시스템</h3>
+                <p><b>설명:</b> 게임패드의 아날로그 스틱을 활용한 가상 마우스 커서 구현</p>
+                <p><b>주요 특징:</b></p>
+                <ul>
+                    <li>✔ AnalogCursor 확장하여 커서 구현</li>
+                    <li>✔ 게임패드 버튼 입력을 마우스 이벤트로 변환</li>
+                    <li>✔ 아날로그 스틱 Dead Zone 이슈 해결</li>
+                </ul>
+                <p>
+                    📌 상세한 기술 설명은 아래 문서에서 확인할 수 있습니다: <br>
+                    <a href="https://www.notion.so/Gamepad-AnalogCursor-1b587dd5893c8040bf20dbb22967d35c?pvs=4" target="_blank">
+                        🔗 Gamepad Analog Cursor 문서 보기
+                    </a>
+                </p>
+            </div>
+            <!-- Force Feedback 시스템 -->
+        <div class="project">
+            <h3>🎮 Force Feedback 시스템 (게임패드 진동 효과)</h3>
+            <p><b>설명:</b> 플레이어의 행동(공격, 점프, 충돌 등)에 따라 Force Feedback을 적용</p>
+            <p><b>주요 특징:</b></p>
+            <ul>
+                <li>✔ 공격, 점프, 피격 등 특정 액션에 따른 Force Feedback 구현</li>
+                <li>✔ Spectator Controller가 불필요한 진동 신호를 보내는 문제 해결</li>
+            </ul>
+            <p>
+                📌 상세한 기술 설명은 아래 문서에서 확인할 수 있습니다: <br>
+                <a href="https://www.notion.so/Gamepad-Forcefeedback-1b587dd5893c802580b1cf2bcde3cec3?pvs=4" target="_blank">
+                    🔗 Force Feedback 시스템 문서 보기
+                </a>
+            </p>
+        </div>
+        
+    <!-- VR 포팅 -->
+    <div class="project">
+        <h3>🕶️ Unity/Unreal VR 포팅 (액션스퀘어, 2022-2023)</h3>
+        <p><b>역할:</b> Unity 및 Unreal VR 포팅 및 최적화</p>
+        <p><b>사용 기술:</b> Unity 3D, Oculus VR, Pico VR, Unreal Engine 4</p>
+        <p><b>주요 작업:</b></p>
+        <ul>
+            <li>✔ Unity 3D → VR 변환 작업</li>
+            <li>✔ Oculus VR 기반 게임을 <b>Pico VR 플랫폼</b>으로 포팅</li>
+            <li>✔ Unity VR 프로젝트의 <b>유니티 버전업 마이그레이션</b></li>
+            <li>✔ Unreal Engine 기반 <b>VR 게임을 Pico VR로 포팅</b> 및 최적화</li>
+            <li>✔ 총 4개의 VR 게임 <b>Pico VR에 출시</b></li>
+        </ul>
+    </div>
+        
+    
+        <!-- 골프존 -->
+        <div class="project">
+            <h3>⛳ 골프 시뮬레이션 클라이언트 개발 (골프존, 2022)</h3>
+            <p><b>역할:</b> C++ 기반 클라이언트 개발</p>
+            <p><b>사용 기술:</b> C++, Unreal Engine</p>
+            <p><b>주요 작업:</b></p>
+            <ul>
+                <li>✔ <b>게임 내 과금 모델 개발</b> (샷의 예측 경로에 장애물 체크 후 알림 기능 추가)</li>
+                <li>✔ <b>아웃게임 UI 로직 변경</b> 및 맵 정렬 로직 개선</li>
+                <li>✔ <b>추천 맵 기능 개발</b></li>
+            </ul>
+        </div>
+    
+        
+    
+    <!-- SDK 샘플 게임 -->
+    <div class="project">
+        <h3>🛠 SDK 샘플 게임 개발 (라인게임즈, 2021)</h3>
+        <p><b>역할:</b> 샘플 게임 개발 및 SDK 적용</p>
+        <p><b>사용 기술:</b> Unreal Engine 4, C++, SDK 연동</p>
+        <p><b>주요 작업:</b></p>
+        <ul>
+            <li>✔ 언리얼4를 활용한 <b>SDK 적용을 위한 샘플 게임 개발</b></li>
+            <li>✔ 4개의 레벨로 구성된 <b>아케이드 게임 제작</b> 후 로그인/결제 SDK 적용</li>
+            <li>✔ 계열사의 SDK 적용 지원</li>
+        </ul>
+    </div>
 
     <!-- 드래곤 플라이트 -->
     <div class="project">
@@ -128,73 +245,36 @@
         <p><b>사용 기술:</b> C++, Lua, PHP, MongoDB, MySQL</p>
         <p><b>주요 작업:</b></p>
         <ul>
-            <li>📌 신규 콘텐츠 개발 (신규 캐릭터, 아이템, 스킬, 패키지)</li>
-            <li>📌 유저 동향 분석을 위한 <b>로그 시스템 구축</b></li>
-            <li>📌 <b>PVP 콘텐츠</b> 개발</li>
-            <li>📌 <b>이벤트 시스템 개발</b> (MongoDB 및 PHP 기반 보상 지급 로직 및 테이블 추가, 시즌별 이벤트 보상 쿼리 작성)</li>
-            <li>📌 QA 테스트를 위한 API 개발</li>
+            <li>✔ 신규 콘텐츠 개발 (신규 캐릭터, 아이템, 스킬, 패키지)</li>
+            <li>✔ 유저 동향 분석을 위한 <b>로그 시스템 구축</b></li>
+            <li>✔ <b>PVP 콘텐츠</b> 개발</li>
+            <li>✔ <b>이벤트 시스템 개발</b> (MongoDB 및 PHP 기반 보상 지급 로직 및 테이블 추가, 시즌별 이벤트 보상 쿼리 작성)</li>
+            <li>✔ QA 테스트를 위한 API 개발</li>
         </ul>
-        <img src="images/dragon_flight.png" alt="드래곤 플라이트" class="project-img">
     </div>
 
-    <!-- SDK 샘플 게임 -->
+    <!-- 학부졸업 -->
     <div class="project">
-        <h3>🛠 SDK 샘플 게임 개발 (라인게임즈, 2021)</h3>
-        <p><b>역할:</b> 샘플 게임 개발 및 SDK 적용</p>
-        <p><b>사용 기술:</b> Unreal Engine 4, C++, SDK 연동</p>
+        <h3>🎮 게임공학과 학사 (2013 ~ 2020)</h3>
+        <p><b>역할:</b> 게임 개발에 필요한 지식 습득</p>
+        <p><b>사용 기술:</b> C++, STL, Unreal 4, WIN API, Open GL</p>
         <p><b>주요 작업:</b></p>
         <ul>
-            <li>📌 언리얼4를 활용한 <b>SDK 적용을 위한 샘플 게임 개발</b></li>
-            <li>📌 4개의 레벨로 구성된 <b>아케이드 게임 제작</b> 후 로그인/결제 SDK 적용</li>
-            <li>📌 계열사의 SDK 적용 지원</li>
+            <li>✔ 3인 팀프로젝트(2클라이언트 / 1그래픽) - 언리얼4를 이용한 RPG 제작 / 레벨시퀀스, 몬스터 AI, 인게임 제작</li>
+            <a href="https://www.youtube.com/watch?v=2K96YEEirUQ&t=60s" target="_blank">
+                🔗 언리얼4 졸업작품 시연영상
+            </a>
+            <li>✔ Open GL 이용한 3D 게임 제작 / 파일 입출력 시스템으로 랭킹 관리, 비행기 물리 적용</li>
+            <a href="https://github.com/jee599/portfolio" target="_blank">
+                🔗 OpenGL 프로젝트 git 주소
+            </a>
+            <li>✔ Win API를 활용한 2D 슈팅게임 제작 / STL 컨테이너 사용해서 오브젝트 관리 / 리소스 제작</li>
+            <a href="https://github.com/jee599/WinP" target="_blank">
+                🔗 winAPI 프로젝트 git 주소
+            </a>
         </ul>
-        <img src="images/sdk_sample_game.png" alt="SDK 샘플 게임" class="project-img">
     </div>
-
-    <!-- 골프존 -->
-    <div class="project">
-        <h3>⛳ 골프존 클라이언트 개발 (2022)</h3>
-        <p><b>역할:</b> C++ 기반 클라이언트 개발</p>
-        <p><b>사용 기술:</b> C++, Unreal Engine</p>
-        <p><b>주요 작업:</b></p>
-        <ul>
-            <li>📌 <b>게임 내 과금 모델 개발</b> (샷의 예측 경로에 장애물 체크 후 알림 기능 추가)</li>
-            <li>📌 <b>아웃게임 UI 로직 변경</b> 및 맵 정렬 로직 개선</li>
-            <li>📌 <b>추천 맵 기능 개발</b></li>
-        </ul>
-        <img src="images/golfzon.png" alt="골프존 프로젝트" class="project-img">
-    </div>
-
-    <!-- VR 포팅 -->
-    <div class="project">
-        <h3>🕶️ Unity/Unreal VR 포팅 (액션스퀘어, 2022-2023)</h3>
-        <p><b>역할:</b> Unity 및 Unreal VR 포팅 및 최적화</p>
-        <p><b>사용 기술:</b> Unity XR, Unreal Engine XR</p>
-        <p><b>주요 작업:</b></p>
-        <ul>
-            <li>📌 <b>Unity 3D → VR 변환</b> 작업</li>
-            <li>📌 Oculus VR 기반 게임을 <b>Pico VR 플랫폼</b>으로 포팅</li>
-            <li>📌 Unity VR 프로젝트의 <b>유니티 버전업 마이그레이션</b></li>
-            <li>📌 Unreal Engine 기반 <b>VR 게임을 Pico VR로 포팅</b> 및 최적화</li>
-            <li>📌 총 4개의 VR 게임 <b>Pico VR에 출시</b></li>
-        </ul>
-        <img src="images/vr_project.png" alt="VR 프로젝트" class="project-img">
-    </div>
-
-    <!-- Unreal 5 신작 -->
-    <div class="project">
-        <h3>🎮 Unreal 5 신작 개발 (액션스퀘어, 2023~현재)</h3>
-        <p><b>역할:</b> 언리얼 5 기반 신작 프로젝트 개발</p>
-        <p><b>사용 기술:</b> Unreal Engine 5, C++</p>
-        <p><b>주요 작업:</b></p>
-        <ul>
-            <li>📌 <b>신규 프로젝트 초기 개발 참여</b></li>
-            <li>📌 언리얼 5의 최신 기술 활용</li>
-            <li>📌 프로젝트 최적화 및 구조 설계</li>
-        </ul>
-        <img src="images/unreal5_project.png" alt="Unreal 5 프로젝트" class="project-img">
-    </div>
-</section>
+    </section>
     </div>
 </body>
 </html>
