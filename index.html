@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>지동석 - 게임 개발자 포트폴리오</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .container {
             width: 80%;
@@ -20,50 +21,20 @@
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        h1, h2 {
             text-align: center;
             color: #007bff;
         }
-        .timeline {
-            position: relative;
-            padding: 20px 0;
+        .section {
+            margin-bottom: 40px;
         }
-        .timeline::before {
-            content: "";
-            position: absolute;
-            left: 50%;
-            width: 4px;
-            height: 100%;
-            background: #007bff;
-            transform: translateX(-50%);
+        .timeline {
+            border-left: 4px solid #007bff;
+            padding-left: 20px;
+            margin-left: 10px;
         }
         .timeline-item {
-            position: relative;
-            width: 50%;
-            padding: 10px 20px;
-            box-sizing: border-box;
-        }
-        .timeline-item:nth-child(odd) {
-            left: 0;
-            text-align: right;
-        }
-        .timeline-item:nth-child(even) {
-            left: 50%;
-        }
-        .timeline-item::before {
-            content: "";
-            position: absolute;
-            top: 20px;
-            right: -10px;
-            width: 20px;
-            height: 20px;
-            background: white;
-            border: 3px solid #007bff;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        .timeline-item:nth-child(even)::before {
-            left: -10px;
+            margin-bottom: 20px;
         }
         .timeline-item h3 {
             margin: 0;
@@ -75,33 +46,114 @@
             font-size: 14px;
             color: #333;
         }
+        .project {
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            margin-bottom: 20px;
+        }
+        .project h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #007bff;
+        }
+        .project p {
+            font-size: 14px;
+        }
+        .skills {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>주요 이력</h1>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>2020.2</h3>
-                <p><b>한국산업기술대 게임공학과 졸업</b></p>
-                <p>- 언리얼4를 이용한 졸업작품 -</p>
+        <!-- 소개 섹션 -->
+        <section class="section">
+            <h1>👋 안녕하세요, 게임 개발자 <b>지동석</b>입니다.</h1>
+            <p style="text-align: center;">
+                C++ | Unreal Engine 4, 5 | Unity VR | Lua
+            </p>
+            <div style="text-align: center;">
+                <span class="skills">C++</span>
+                <span class="skills">Unreal Engine 4</span>
+                <span class="skills">Unreal Engine 5</span>
+                <span class="skills">Unity VR</span>
+                <span class="skills">Lua</span>
             </div>
-            <div class="timeline-item">
-                <h3>2020.1 ~ 2020.12</h3>
-                <p><b>라인게임즈</b> - Drangon Flight 게임 콘텐츠 개발 및 API 개발, 통합툴 연동</p>
-                <p>- Lua, C++, PHP, MySQL 사용 -</p>
+        </section>
+
+        <!-- 이력 섹션 -->
+        <section class="section">
+            <h2>📌 주요 이력</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>2020.2</h3>
+                    <p><b>한국산업기술대 게임공학과 졸업</b></p>
+                    <p>- 언리얼4를 이용한 졸업작품 진행 -</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2020.1 ~ 2020.12</h3>
+                    <p><b>라인게임즈</b> - Drangon Flight 팀</p>
+                    <p>- 게임 콘텐츠 개발 및 API 개발 (Lua, C++, PHP, MySQL)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2021.1 ~ 2022.1</h3>
+                    <p><b>라인게임즈 SDK 개발지원실</b></p>
+                    <p>- 언리얼4 기반 샘플게임 제작 및 SDK 연동</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2022.2 ~ 2022.10</h3>
+                    <p><b>골프존</b></p>
+                    <p>- C++을 이용한 골프존 클라이언트 개발</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2022.11 ~ 2023.3</h3>
+                    <p><b>액션스퀘어</b></p>
+                    <p>- Unity VR 포팅 및 최적화 작업</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2023.4 ~ 현재</h3>
+                    <p><b>액션스퀘어</b></p>
+                    <p>- 언리얼5 기반 신작 프로젝트 초기 참여, UMG 및 Enhanced Input 담당</p>
+                </div>
             </div>
-            <div class="timeline-item">
-                <h3>2021.1 ~ 2022.1</h3>
-                <p><b>라인게임즈 SDK 개발지원실</b></p>
-                <p>- 언리얼4를 이용한 샘플게임 제작 및 SDK 연동 -</p>
+        </section>
+
+        <!-- 프로젝트 섹션 -->
+        <section class="section">
+            <h2>🚀 진행한 프로젝트</h2>
+            <div class="project">
+                <h3>🎮 Drangon Flight</h3>
+                <p>- 라인게임즈에서 게임 콘텐츠 및 API 개발</p>
+                <p>- <b>사용 기술:</b> Lua, C++, PHP, MySQL</p>
+                <p>- <a href="https://github.com/yourproject1" target="_blank">🔗 프로젝트 링크</a></p>
             </div>
-            <div class="timeline-item">
-                <h3>2022.2 ~ 2022.10</h3>
-                <p><b>골프존</b></p>
-                <p>- 언리얼4를 이용한 프로젝트 -</p>
+            <div class="project">
+                <h3>🛠 SDK 개발지원</h3>
+                <p>- 언리얼 엔진을 활용한 샘플게임 제작 및 SDK 연동</p>
+                <p>- <b>사용 기술:</b> Unreal Engine 4, C++</p>
+                <p>- <a href="https://github.com/yourproject2" target="_blank">🔗 프로젝트 링크</a></p>
             </div>
-        </div>
+            <div class="project">
+                <h3>⛳ 골프존 클라이언트</h3>
+                <p>- C++ 기반 골프존 클라이언트 개발</p>
+                <p>- <b>사용 기술:</b> C++, Unreal Engine</p>
+                <p>- <a href="https://github.com/yourproject3" target="_blank">🔗 프로젝트 링크</a></p>
+            </div>
+            <div class="project">
+                <h3>🕶️ Unity VR 포팅</h3>
+                <p>- 액션스퀘어에서 Unity VR 포팅 및 최적화 작업 수행</p>
+                <p>- <b>사용 기술:</b> Unity VR</p>
+                <p>- <a href="https://github.com/yourproject4" target="_blank">🔗 프로젝트 링크</a></p>
+            </div>
+        </section>
     </div>
 </body>
 </html>
